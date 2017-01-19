@@ -1,6 +1,6 @@
 {
   "name": "@ssense/vue-component-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A sensible starting point for Vue component creation",
   "main": "meta.js",
   "dependencies": {},
