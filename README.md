@@ -4,34 +4,62 @@
 
 This repository serves as a sensible starting point for developing Vue components which can be published as node modules.
 
-## Roadmap
+The following features are provided standard, but many of them can be configured:
 
-### Testing
+* Automatic Github repository creation
+* Documentation with Gitbook, publish to `gh-pages` baked in
+* Configurable linting with ESLint
+* Unit testing with Jest
+* Development sandbox with dev server and HMR provided by vue-play
+* Continuous integration with Travis CI
 
-[Jest](https://facebook.github.io/jest/) will be used for testing. We'll scaffold out a `tests/` directory and provide example tests.
+## Setup
 
-### Linting
+### 1. Run the generator
 
-The default linter will be [eslint-config-ssense](https://www.npmjs.com/package/eslint-config-ssense). The generator will provide more options for linting packages.
+This boilerplate uses [vue-cli](https://github.com/vuejs/vue-cli) as a generator to scaffold out your project. To install:
 
-### Documentation
+``` bash
+npm install -g vue-cli
+```
 
-[Hexo](https://hexo.io/) will be used to construct a static site for gh-pages compiled from markdown files. This aspect of the boilerplate should cover a flow for generating an untracked `docs/public/` folder which is automatically pushed to the `gh-pages` branch when a publish script is used.
+Next, you will initialize the cli with a folder name and will be prompted with a series of options to configure the new component.
 
-### Sandbox
+### 2. Choose a folder name
 
-It should be easy to install the component package and make changes to it in an isolated dev environment. A sandbox for component development as well as demonstration of component states will be provided. A likely candidate for this is [Vue Play](https://github.com/vue-play/vue-play).
+**Important: To minimize any need to do manually renaming later, choose a folder name which matches the repo name you will use on Git.**
 
-### Github Integrations
+For example, if you want your component to be published as `vue-dynamic-button` on github and npm, that should be the folder name you select at the start.
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
-[![Coveralls](https://img.shields.io/coveralls/jekyll/jekyll.svg)]()
-[![Known Vulnerabilities](https://snyk.io/test/npm/@ssense/cucumber-testrail-sync/badge.svg)]()
+With that in mind, initialize the generator:
 
-* Travis CI (or Circle potentially)
-* Coveralls (Code coverage)
-* Snyk (Vulnerability detection)
+``` bash
+vue init '@ssense/vue-component-boilerplate' my-folder-name
+```
 
-### Generator
+You will be prompted with options and a new folder will be created for you in the current directory.
 
-In order to greatly reduce manual efforts involved in initial setup of a component repo, a generator will exist to configure project options and scaffold the folder tree.
+### 3. Initialize the repository on Github
+
+An npm script is provided which will create a repository under the github username you specified in the generator's option prompt.
+
+**Important: The following command will create a new repository on Github. If you'd like to configure your own git origin, skip this step and do so manually.**
+
+Create and initialize a public repository:
+
+``` bash
+cd my-folder-name
+npm run init
+```
+
+or create & initialize a private repository:
+
+``` bash
+cd my-folder-name
+npm run init:private
+```
+
+## Usage
+
+After running generator, the usage instructions can be found in README.md in the newly created directory.
+

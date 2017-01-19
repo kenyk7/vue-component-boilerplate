@@ -1,0 +1,27 @@
+{
+  "name": "@ssense/vue-component-boilerplate",
+  "version": "0.0.1",
+  "description": "A sensible starting point for Vue component creation",
+  "main": "meta.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Groupe-Atallah/vue-component-boilerplate.git"
+  },
+  "keywords": [
+    "Vue",
+    "Component",
+    "Boilerplate",
+    "Jest"
+  ],
+  "author": "todd.beauchamp@ssense.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Groupe-Atallah/vue-component-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Groupe-Atallah/vue-component-boilerplate#readme"
+}
