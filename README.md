@@ -34,7 +34,7 @@ For example, if you want your component to be published as `vue-dynamic-button` 
 With that in mind, initialize the generator:
 
 ``` bash
-vue init '@ssense/vue-component-boilerplate' my-folder-name
+vue init 'SSENSE/vue-component-boilerplate' my-folder-name
 ```
 
 You will be prompted with options and a new folder will be created for you in the current directory.
