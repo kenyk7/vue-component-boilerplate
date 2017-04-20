@@ -50,6 +50,7 @@
     "eslint-config-standard": "^6.1.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
+    {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-import-resolver-webpack": "^0.6.0",
@@ -59,7 +60,7 @@
     {{#docs}}
     "gitbook-cli": "^2.3.0",
     {{/docs}}
-    "html-webpack-plugin": "^2.24.1"
+    "html-webpack-plugin": "^2.24.1",
     {{#unit}}
     "html2jade": "^0.8.6",
     "husky": "^0.12.0",
